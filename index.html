@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SociaInnovate</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #333;
+        padding: 10px 20px;
+        color: #fff;
+      }
+      .navbar .logo {
+        font-size: 24px;
+        font-weight: bold;
+      }
+      .navbar ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+      }
+      .navbar ul li {
+        margin: 0 15px;
+      }
+      .navbar ul li a {
+        color: #fff;
+        text-decoration: none;
+      }
+      .navbar .auth-buttons a {
+        padding: 10px 20px;
+        margin-left: 10px;
+        text-decoration: none;
+        color: #fff;
+        border-radius: 5px;
+      }
+      .navbar .auth-buttons .login {
+        background-color: #444;
+      }
+      .navbar .auth-buttons .signup {
+        background-color: #007bff;
+      }
+      /* Responsive Styles */
+      @media (max-width: 768px) {
+        .navbar ul {
+          display: none;
+          flex-direction: column;
+          width: 100%;
+          position: absolute;
+          top: 60px;
+          left: 0;
+          background-color: #333;
+        }
+        .navbar ul.show {
+          display: flex;
+        }
+        .navbar .hamburger {
+          display: block;
+          cursor: pointer;
+        }
+        .navbar .hamburger div {
+          width: 30px;
+          height: 3px;
+          background-color: #fff;
+          margin: 5px 0;
+        }
+      }
+      @media (min-width: 769px) {
+        .navbar .hamburger {
+          display: none;
+        }
+      }
+      /* Hero Section */
+      .hero {
+        text-align: center;
+        padding: 50px 20px;
+        background: #f4f4f4;
+      }
+
+      .hero h1 {
+        font-size: 2.5em;
+        margin-bottom: 10px;
+      }
+
+      .hero p {
+        font-size: 1.2em;
+        margin-bottom: 20px;
+      }
+
+      .hero button {
+        padding: 10px 20px;
+        font-size: 1em;
+        color: #fff;
+        background: #007bff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      /* Section Styles */
+      section {
+        padding: 50px 20px;
+      }
+
+      .features,
+      .benefits,
+      .how-it-works,
+      .testimonials,
+      .partners,
+      .faq,
+      .about-us,
+      .mission,
+      .contact {
+        text-align: center;
+      }
+
+      .features .feature,
+      .benefits ul,
+      .how-it-works ol,
+      .testimonials blockquote,
+      .faq .question,
+      .contact form {
+        margin: 20px 0;
+      }
+
+      /* Responsive Section Styles */
+      @media (min-width: 768px) {
+        .features .feature {
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+        }
+
+        .features .feature img {
+          max-width: 50%;
+        }
+
+        .benefits ul {
+          display: flex;
+          justify-content: center;
+          list-style: none;
+          padding: 0;
+        }
+
+        .benefits ul li {
+          margin: 0 15px;
+        }
+
+        .how-it-works ol {
+          display: flex;
+          justify-content: center;
+          list-style: none;
+          padding: 0;
+        }
+
+        .how-it-works ol li {
+          margin: 0 15px;
+        }
+      }
+
+      /* Footer Styles */
+      footer {
+        background: #333;
+        color: #fff;
+        text-align: center;
+        padding: 20px 0;
+      }
+
+      footer ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        margin: 20px 0 0 0;
+      }
+
+      footer ul li {
+        margin: 0 15px;
+      }
+
+      footer ul li a {
+        color: #fff;
+        text-decoration: none;
+      }
+
+      footer .social-media {
+        margin-top: 20px;
+      }
+
+      footer .social-media a {
+        margin: 0 10px;
+        color: #fff;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">SociaInnovate</div>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#features">Fitur</a></li>
+        <li><a href="#how-it-works">Cara Kerja</a></li>
+        <li><a href="#testimonials">Testimoni</a></li>
+        <li><a href="#about-us">Tentang Kami</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contact">Kontak</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+      <div class="auth-buttons">
+        <a href="#login" class="login">Login</a>
+        <a href="#signup" class="signup">Daftar</a>
+      </div>
+      <div class="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </nav>
+    <div class="hero">
+      <h1>SociaInnovate: Menggerakkan Inovasi Sosial</h1>
+      <p>
+        Ajukan ide Anda, kolaborasi dengan tim, dan ciptakan perubahan nyata.
+      </p>
+      <button>Mulai Sekarang</button>
+    </div>
+    <section class="features">
+      <h2>Fitur Utama</h2>
+      <div class="feature">
+        <h3>Pengajuan Ide</h3>
+        <p>Ajukan ide inovatif Anda dan dapatkan dukungan dari komunitas.</p>
+        <img src="screenshot-ide.png" alt="Screenshot Pengajuan Ide" />
+      </div>
+      <div class="feature">
+        <h3>Kolaborasi Tim</h3>
+        <p>
+          Bentuk tim dengan orang-orang yang memiliki visi yang sama dan
+          wujudkan ide Anda bersama-sama.
+        </p>
+        <img src="screenshot-kolaborasi.png" alt="Screenshot Kolaborasi Tim" />
+      </div>
+      <div class="feature">
+        <h3>Alat Analisis</h3>
+        <p>
+          Gunakan alat analisis kami untuk mengevaluasi dan meningkatkan ide
+          Anda.
+        </p>
+        <img src="screenshot-analisis.png" alt="Screenshot Alat Analisis" />
+      </div>
+    </section>
+    <section class="benefits">
+      <h2>Keuntungan untuk Anda</h2>
+      <ul>
+        <li>Memperluas jaringan dengan kolaborasi yang lebih mudah.</li>
+        <li>Meningkatkan peluang sukses dengan dukungan komunitas.</li>
+        <li>Alat analisis yang membantu mengukur dampak dan keberhasilan.</li>
+      </ul>
+      <blockquote>
+        "SociaInnovate telah membantu kami menemukan solusi inovatif untuk
+        masalah komunitas kami." - Jane Doe, Aktivis Sosial
+      </blockquote>
+    </section>
+    <section class="how-it-works">
+      <h2>Bagaimana Cara Kerjanya</h2>
+      <ol>
+        <li>Buat Akun atau Masuk</li>
+        <li>Ajukan Ide atau Bergabung dengan Tim</li>
+        <li>Kolaborasi dan Wujudkan Inovasi</li>
+        <li>Gunakan Alat Analisis untuk Mengukur Dampak</li>
+      </ol>
+      <img src="diagram-proses.png" alt="Diagram Proses" />
+    </section>
+    <section class="testimonials">
+      <h2>Testimoni Pengguna</h2>
+      <blockquote>
+        "SociaInnovate membantu kami mengubah ide menjadi kenyataan." - John
+        Smith, CEO Inovasi Muda
+      </blockquote>
+      <blockquote>
+        "Platform yang luar biasa untuk kolaborasi sosial." - Maria Lopez,
+        Pendiri Komunitas Cerdas
+      </blockquote>
+    </section>
+    <section class="partners">
+      <h2>Didukung Oleh</h2>
+      <img src="partner-logo1.png" alt="Partner Logo 1" />
+      <img src="partner-logo2.png" alt="Partner Logo 2" />
+    </section>
+    <section class="faq">
+      <h2>Pertanyaan yang Sering Diajukan</h2>
+      <div class="question">
+        <h3>Apa itu SociaInnovate?</h3>
+        <p>
+          SociaInnovate adalah platform untuk mengajukan, mengembangkan, dan
+          mengimplementasikan inovasi sosial.
+        </p>
+      </div>
+      <div class="question">
+        <h3>Bagaimana cara bergabung dengan tim?</h3>
+        <p>
+          Anda dapat mencari tim yang sesuai dengan minat Anda dan mengajukan
+          permintaan untuk bergabung.
+        </p>
+      </div>
+    </section>
+    <section class="about-us">
+      <h2>Tentang Kami</h2>
+      <p>
+        Kami adalah tim yang berdedikasi untuk memfasilitasi inovasi sosial
+        melalui teknologi. Misi kami adalah mendukung ide-ide yang bisa membawa
+        perubahan positif di masyarakat.
+      </p>
+    </section>
+    <section class="mission">
+      <h2>Misi Kami</h2>
+      <p>
+        SociaInnovate bertujuan untuk memperkuat komunitas dengan memberikan
+        alat yang dibutuhkan untuk mengembangkan dan mengimplementasikan inovasi
+        sosial.
+      </p>
+    </section>
+    <section class="contact">
+      <h2>Kontak Kami</h2>
+      <p>Email: support@sociainnovate.com</p>
+      <p>Telepon: (123) 456-7890</p>
+      <form action="/submit-query" method="post">
+        <input type="text" name="name" placeholder="Nama Anda" required />
+        <input type="email" name="email" placeholder="Email Anda" required />
+        <textarea name="message" placeholder="Pesan Anda" required></textarea>
+        <button type="submit">Kirim</button>
+      </form>
+    </section>
+    <footer>
+      <p>&copy; 2024 SociaInnovate. All rights reserved.</p>
+      <ul>
+        <li><a href="/privacy-policy">Kebijakan Privasi</a></li>
+        <li><a href="/terms-of-service">Syarat dan Ketentuan</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="/contact">Kontak</a></li>
+      </ul>
+      <div class="social-media">
+        <a href="https://facebook.com/sociainnovate" target="_blank"
+          >Facebook</a
+        >
+        <a href="https://twitter.com/sociainnovate" target="_blank">Twitter</a>
+        <a href="https://instagram.com/sociainnovate" target="_blank"
+          >Instagram</a
+        >
+      </div>
+    </footer>
+    <script>
+      document
+        .querySelector(".hamburger")
+        .addEventListener("click", function () {
+          document.querySelector(".navbar ul").classList.toggle("show");
+        });
+    </script>
+  </body>
+</html>
