@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ajukan Ide Anda - SociaInnovate</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container mt-5">
+      <h1>Ajukan Ide Anda</h1>
+      <p class="lead">
+        Silakan ajukan ide inovatif Anda menggunakan formulir di bawah ini.
+        Pastikan untuk memberikan deskripsi yang lengkap dan jelas.
+      </p>
+
+      <form>
+        <div class="mb-3">
+          <label for="ideaName" class="form-label">Nama Ide</label>
+          <input
+            type="text"
+            class="form-control"
+            id="ideaName"
+            placeholder="Masukkan nama ide Anda"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="description" class="form-label">Deskripsi</label>
+          <textarea
+            class="form-control"
+            id="description"
+            rows="5"
+            placeholder="Jelaskan ide Anda secara rinci"
+            required
+          ></textarea>
+        </div>
+        <div class="mb-3">
+          <label for="category" class="form-label">Kategori</label>
+          <select class="form-select" id="category" required>
+            <option value="" disabled selected>Pilih kategori</option>
+            <option value="education">Pendidikan</option>
+            <option value="health">Kesehatan</option>
+            <option value="environment">Lingkungan</option>
+            <option value="technology">Teknologi</option>
+            <option value="social">Sosial</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <label for="goal" class="form-label">Tujuan dan Dampak</label>
+          <textarea
+            class="form-control"
+            id="goal"
+            rows="3"
+            placeholder="Jelaskan tujuan dan dampak yang diharapkan"
+            required
+          ></textarea>
+        </div>
+        <div class="mb-3">
+          <label for="challenges" class="form-label">Tantangan</label>
+          <textarea
+            class="form-control"
+            id="challenges"
+            rows="3"
+            placeholder="Identifikasi tantangan utama yang ingin diselesaikan"
+            required
+          ></textarea>
+        </div>
+        <div class="mb-3">
+          <label for="solution" class="form-label">Solusi</label>
+          <textarea
+            class="form-control"
+            id="solution"
+            rows="3"
+            placeholder="Jelaskan solusi yang diusulkan"
+            required
+          ></textarea>
+        </div>
+        <div class="mb-3">
+          <label for="attachments" class="form-label">Lampiran</label>
+          <input type="file" class="form-control" id="attachments" />
+        </div>
+        <div class="mb-3">
+          <label for="submissionDate" class="form-label"
+            >Tanggal Pengajuan</label
+          >
+          <input
+            type="date"
+            class="form-control"
+            id="submissionDate"
+            required
+          />
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="terms" required />
+          <label class="form-check-label" for="terms"
+            >Saya setuju dengan <a href="#">syarat dan ketentuan</a></label
+          >
+        </div>
+        <button type="submit" class="btn btn-primary">Ajukan Ide</button>
+        <button type="button" class="btn btn-secondary">Simpan Draft</button>
+        <button type="button" class="btn btn-link">Batal</button>
+      </form>
+    </div>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
