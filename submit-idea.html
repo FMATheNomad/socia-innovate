@@ -10,7 +10,7 @@
     />
   </head>
   <body>
-    <div class="container mt-5">
+    <div class="container mt-5 mb-5">
       <h1>Ajukan Ide Anda</h1>
       <p class="lead">
         Silakan ajukan ide inovatif Anda menggunakan formulir di bawah ini.
@@ -78,6 +78,11 @@
             placeholder="Jelaskan solusi yang diusulkan"
             required
           ></textarea>
+        </div>
+        <div class="mb-3">
+          <label for="thumbnail" class="form-label">Thumbnail</label>
+          <input type="file" class="form-control" id="thumbnail" />
+          <p class="text-danger">(Jenis file: .jpg, .png)</p>
         </div>
         <div class="mb-3">
           <label for="attachments" class="form-label">Lampiran</label>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Masuk/Daftar - SociaInnovate</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container mt-5 mb-5">
+      <h1>Masuk</h1>
+      <p class="lead">
+        Silakan login atau buat akun baru menggunakan formulir di bawah ini.
+        Pastikan untuk memberikan informasi yang lengkap dan jelas.
+      </p>
+
+      <form>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input
+            class="form-control"
+            id="email"
+            rows="5"
+            placeholder="Masukkan Email Anda"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="password" class="form-label">Password</label>
+          <input
+            class="form-control"
+            id="password"
+            rows="5"
+            placeholder="Buat password"
+            required
+          />
+        </div>
+        <div class="mb-3 form-check">
+          <input
+            type="checkbox"
+            class="form-check-input"
+            id="remember-me"
+            required
+          />
+          <label class="form-check-label" for="remember-me">Ingat saya</label>
+        </div>
+        <div class="mb-3">
+          <p>
+            Belum punya akun? Klik disini untuk
+            <a
+              class="link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+              href="registration.html"
+              >Pendaftaran sebagai inovator</a
+            >
+            atau klik disini untuk
+            <a
+              class="link-success link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+              href="investor-registration.html"
+              >Pendaftaran sebagai investor/pendana</a
+            >
+          </p>
+        </div>
+        <button type="button" class="btn btn-primary">Login</button>
+      </form>
+    </div>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
